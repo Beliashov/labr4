@@ -1,13 +1,13 @@
 all: app
 
-app: main.o sort_methods.o
-	gcc main.o sort_methods.o -o app
+app: main.o sort.o
+	gcc main.o sort.o -o app
 
-main.o: main.c sort_methods.h
+main.o: main.c sort.h
 	gcc -c main.c -o main.o
 
-sort_methods.o: sort_methods.c sort_methods.h
-	gcc -c sort_methods.c -o sort_methods.o
+sort.o: sort.c sort.h
+	gcc -c sort.c -o sort.o
 
 clean:
-	rm -f main.o sort_methods.o app
+	rm -f main.o sort.o app
