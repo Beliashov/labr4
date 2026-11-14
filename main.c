@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "sort_methods.h"
+#include "sort.h"
 
 void generateArr(int *arr, int n) {
     for (int i = 0; i < n; i++) {
