@@ -52,11 +52,10 @@ int main() {
         double time_merge = (double)(end_merge - start_merge) / CLOCKS_PER_SEC;
 
         //Вывод
-        printf("size: %d \n[bubble: %f sec, swaps: %lld] O(n^2)\n[insertion: %f sec, swaps: %lld] O(n^2)\n[merge: %f sec, swaps: %lld] O(n logn)\n\n",
-               n,
-               time_bubble, swap_count_bubble,
-               time_insertion, swap_count_insertion,
-               time_merge, swap_count_merge);
+        printf("size: %d \n", n);
+        printf("[bubble: %f sec, swaps: %lld] O(n^2)\n", time_bubble, swap_count_bubble);
+        printf("[insertion: %f sec, swaps: %lld] O(n^2)\n", time_insertion, swap_count_insertion);
+        printf("[merge: %f sec, swaps: %lld] O(n logn)\n\n", time_merge, swap_count_merge);
 
         free(original);
         free(copy_bubble);
